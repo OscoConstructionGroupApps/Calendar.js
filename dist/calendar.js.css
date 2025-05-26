@@ -1359,7 +1359,7 @@ div.calendar div.full-week-view div.contents {
 }
 @media screen and (max-width: 450px) {
   div.calendar div.full-week-view div.contents {
-    height: calc(100% - (var(--calendar-js-spacing) * 2 + var(--calendar-js-small-font-size)));
+    /*height: calc(100% - (var(--calendar-js-spacing) * 2 + var(--calendar-js-small-font-size)));*/
   }
 }
 div.calendar div.full-week-view div.contents div.content-events-all-day {
@@ -1391,9 +1391,9 @@ div.calendar div.full-week-view div.contents div.header-days-container {
   z-index: 100;
 }
 div.calendar div.full-week-view div.contents div.header-days-container div.header-days {
-  width: calc(100% - var(--calendar-js-time-view-hours-width) - var(--calendar-js-spacing) * 2);
+  /*width: calc(100% - var(--calendar-js-time-view-hours-width) - var(--calendar-js-spacing) * 2);*/
   background-color: blue;
-  margin-left: calc(var(--calendar-js-time-view-hours-width) + var(--calendar-js-spacing) * 2 + var(--calendar-js-spacing-border-size));
+  /*margin-left: calc(var(--calendar-js-time-view-hours-width) + var(--calendar-js-spacing) * 2 + var(--calendar-js-spacing-border-size));*/
   border-bottom: var(--calendar-js-spacing-border-size) solid var(--calendar-js-grid-border-color);
 }
 div.calendar div.full-week-view div.contents div.hours {
@@ -1433,6 +1433,13 @@ div.calendar div.full-week-view div.contents div.hours div.hour:nth-child(odd) {
 }
 div.calendar div.full-week-view div.contents div.hours div.hour:last-child {
   border-bottom: none;
+}
+div.hour {
+    display: none
+}
+
+div.hours {
+    display: none
 }
 div.calendar div.full-week-view div.contents div.content-events-all-day div.days {
   height: 100% !important;
@@ -1486,12 +1493,15 @@ div.calendar div.full-week-view div.contents div.content-events-all-day div.days
   width: calc(100% - (var(--calendar-js-spacing) * 2 + var(--calendar-js-spacing-border-size) * 5)) !important;
   margin-left: 0 !important;
 }
+div.content-events-all-day {
+    height: 100%
+}
 div.calendar div.full-week-view div.contents div.days {
   position: absolute;
-  width: calc(100% - var(--calendar-js-time-view-hours-width) - var(--calendar-js-spacing) * 2);
+  /*width: calc(100% - var(--calendar-js-time-view-hours-width) - var(--calendar-js-spacing) * 2);*/
   height: 100%;
   top: 0;
-  left: calc(var(--calendar-js-time-view-hours-width) + var(--calendar-js-spacing) * 2 + var(--calendar-js-spacing-border-size));
+  /*left: calc(var(--calendar-js-time-view-hours-width) + var(--calendar-js-spacing) * 2 + var(--calendar-js-spacing-border-size));*/
   background-color: transparent;
 }
 div.calendar div.full-week-view div.contents div.days div.cell div.time-arrow {
@@ -6129,3 +6139,6 @@ div.calendar-context-menu div.separator {
   cursor: pointer;
   opacity: 0.5;
 }/*# sourceMappingURL=calendar.js.css.map */
+.content-events-all-day{
+    height:100%
+}
