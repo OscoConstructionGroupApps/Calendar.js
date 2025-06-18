@@ -733,7 +733,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
         buildToolbarButton( _element_SideMenu_Header, "ib-close", _options.closeTooltipText, hideSideMenu );
 
         if ( _options.configurationDialogEnabled || _options.exportEventsEnabled || ( _options.importEventsEnabled && _options.manualEditingEnabled ) ) {
-            _element_SideMenu_Header.appendChild( createElement( "div", "right-divider-line" ) );
+//            _element_SideMenu_Header.appendChild( createElement( "div", "right-divider-line" ) );
         }
 
         if ( _options.configurationDialogEnabled ) {
@@ -744,7 +744,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
         }
 
         if ( _options.configurationDialogEnabled && _options.exportEventsEnabled || ( _options.importEventsEnabled && _options.manualEditingEnabled ) ) {
-            _element_SideMenu_Header.appendChild( createElement( "div", "right-divider-line" ) );
+//            _element_SideMenu_Header.appendChild( createElement( "div", "right-divider-line" ) );
         }
 
         if ( _options.exportEventsEnabled ) {
@@ -1986,12 +1986,12 @@ export function calendarJs( elementOrId, options, searchOptions ) {
 
             buildToolbarButton( titleBar, "ib-close", _options.closeTooltipText, hideFullDayView );
 
-            titleBar.appendChild( createElement( "div", "right-divider-line" ) );
+            //titleBar.appendChild( createElement( "div", "right-divider-line" ) );
 
             if ( _options.views.fullDay.showExtraTitleBarButtons && _options.fullScreenModeEnabled ) {
                 _element_View_FullDay_FullScreenButton = buildToolbarButton( titleBar, "ib-arrow-expand-left-right", _options.enableFullScreenTooltipText, fullScreenModeHeaderDoubleClick );
 
-                titleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
+//                titleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
             }
     
             buildToolbarButton( titleBar, "ib-arrow-right-full", _options.nextDayTooltipText, onNextFullDay );
@@ -2010,7 +2010,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
             }
 
             if ( _options.views.timeline.enabled ) {
-                titleBar.appendChild( createElement( "div", "right-divider-line-views" ) );
+//                titleBar.appendChild( createElement( "div", "right-divider-line-views" ) );
 
                 buildToolbarButton( titleBar, "ib-bar-graph", _options.viewTimelineTooltipText, function() {
                     showTimelineView( _element_View_FullDay_DateSelected, true );
@@ -2020,7 +2020,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
             if ( !_element_Mode_DatePicker_Enabled && isSideMenuAvailable() ) {
                 buildToolbarButton( titleBar, "ib-hamburger", _options.showMenuTooltipText, showSideMenu );
 
-                titleBar.appendChild( createElement( "div", "left-divider-line" ) );
+                //titleBar.appendChild( createElement( "div", "left-divider-line" ) );
             }
 
             buildToolbarButton( titleBar, "ib-arrow-left-full", _options.previousDayTooltipText, onPreviousFullDay );
@@ -2034,7 +2034,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
                     } );
                 }
 
-                titleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
+//                titleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
     
                 buildToolbarButton( titleBar, "ib-refresh", _options.refreshTooltipText, function() {
                     refreshViews( true, true );
@@ -2517,12 +2517,12 @@ export function calendarJs( elementOrId, options, searchOptions ) {
                 hideView( _element_View_FullWeek );
             } );
 
-            titleBar.appendChild( createElement( "div", "right-divider-line" ) );
+            //titleBar.appendChild( createElement( "div", "right-divider-line" ) );
 
             if ( _options.views.fullWeek.showExtraTitleBarButtons && _options.fullScreenModeEnabled ) {
                 _element_View_FullWeek_FullScreenButton = buildToolbarButton( titleBar, "ib-arrow-expand-left-right", _options.enableFullScreenTooltipText, fullScreenModeHeaderDoubleClick );
 
-                titleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
+//                titleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
             }
     
             buildToolbarButton( titleBar, "ib-arrow-right-full", _options.nextWeekTooltipText, onNextFullWeek );
@@ -2536,7 +2536,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
             if ( !_element_Mode_DatePicker_Enabled && isSideMenuAvailable() ) {
                 buildToolbarButton( titleBar, "ib-hamburger", _options.showMenuTooltipText, showSideMenu );
 
-                titleBar.appendChild( createElement( "div", "left-divider-line" ) );
+//                titleBar.appendChild( createElement( "div", "left-divider-line" ) );
             }
 
             buildToolbarButton( titleBar, "ib-arrow-left-full", _options.previousWeekTooltipText, onPreviousFullWeek );
@@ -2550,7 +2550,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
                     } );
                 }
 
-                titleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
+//                titleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
 
                 buildToolbarButton( titleBar, "ib-refresh", _options.refreshTooltipText, function() {
                     refreshViews( true, true );
@@ -3174,7 +3174,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
         if ( !_element_Mode_DatePicker_Enabled && isSideMenuAvailable() ) {
             buildToolbarButton( _element_View_FullMonth_TitleBar, "ib-hamburger", _options.showMenuTooltipText, showSideMenu );
             
-            _element_View_FullMonth_TitleBar.appendChild( createElement( "div", "left-divider-line" ) );
+//            _element_View_FullMonth_TitleBar.appendChild( createElement( "div", "left-divider-line" ) );
         }
 
         buildToolbarButton( _element_View_FullMonth_TitleBar, "ib-arrow-left-full", _options.previousMonthTooltipText, onPreviousMonth );
@@ -3194,7 +3194,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
                 } );
             }
 
-            _element_View_FullMonth_TitleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
+            //_element_View_FullMonth_TitleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
 
             buildToolbarButton( _element_View_FullMonth_TitleBar, "ib-refresh", _options.refreshTooltipText, function() {
                 refreshViews( true, true );
@@ -3208,13 +3208,13 @@ export function calendarJs( elementOrId, options, searchOptions ) {
         if ( _element_Mode_DatePicker_Enabled ) {
             buildToolbarButton( _element_View_FullMonth_TitleBar, "ib-close", _options.closeTooltipText, hideDatePickerMode );
 
-            _element_View_FullMonth_TitleBar.appendChild( createElement( "div", "right-divider-line" ) );
+            //_element_View_FullMonth_TitleBar.appendChild( createElement( "div", "right-divider-line" ) );
         }
 
         if ( _options.views.fullMonth.showExtraTitleBarButtons && _options.fullScreenModeEnabled ) {
             _element_View_FullMonth_TitleBar_FullScreenButton = buildToolbarButton( _element_View_FullMonth_TitleBar, "ib-arrow-expand-left-right", _options.enableFullScreenTooltipText, fullScreenModeHeaderDoubleClick );
 
-            _element_View_FullMonth_TitleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
+//            _element_View_FullMonth_TitleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
         }
 
         buildToolbarButton( _element_View_FullMonth_TitleBar, "ib-arrow-right-full", _options.nextMonthTooltipText, onNextMonth );
@@ -3235,7 +3235,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
 
         if ( !_element_Mode_DatePicker_Enabled ) {
             if ( _options.views.timeline.enabled || _options.views.allEvents.enabled || _options.views.fullYear.enabled || _options.views.fullWeek.enabled || _options.views.fullDay.enabled ) {
-                _element_View_FullMonth_TitleBar.appendChild( createElement( "div", "right-divider-line-views" ) );
+//                _element_View_FullMonth_TitleBar.appendChild( createElement( "div", "right-divider-line-views" ) );
             }
             
             if ( _options.views.timeline.enabled ) {
@@ -4203,40 +4203,40 @@ export function calendarJs( elementOrId, options, searchOptions ) {
             if ( !_element_Mode_DatePicker_Enabled && isSideMenuAvailable() ) {
                 buildToolbarButton( titleBar, "ib-hamburger", _options.showMenuTooltipText, showSideMenu );
 
-                titleBar.appendChild( createElement( "div", "left-divider-line" ) );
+//                titleBar.appendChild( createElement( "div", "left-divider-line" ) );
             }
     
-            buildToolbarButton( titleBar, "ib-arrow-left-full", _options.previousYearTooltipText, onPreviousFullYear );
+            //buildToolbarButton( titleBar, "ib-arrow-left-full", _options.previousYearTooltipText, onPreviousFullYear );
 
             if ( _options.views.fullYear.showExtraTitleBarButtons ) {
-                buildToolbarButton( titleBar, "ib-pin", _options.currentYearTooltipText, onCurrentFullYear );
+                //buildToolbarButton( titleBar, "ib-pin", _options.currentYearTooltipText, onCurrentFullYear );
 
                 if ( _options.jumpToDateEnabled ) {
-                    buildToolbarButton( titleBar, "ib-arrow-right-full-line", _options.jumpToDateTitle, function() {
-                        showJumpToDateDialog();
-                    } );
+                    //buildToolbarButton( titleBar, "ib-arrow-right-full-line", _options.jumpToDateTitle, function() {
+                    //    showJumpToDateDialog();
+                    //} );
                 }
 
-                titleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
+//                titleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
 
-                buildToolbarButton( titleBar, "ib-refresh", _options.refreshTooltipText, function() {
-                    refreshViews( true, true );
-                } );
+                //buildToolbarButton( titleBar, "ib-refresh", _options.refreshTooltipText, function() {
+                    //refreshViews( true, true );
+                //} );
             }
     
-            buildToolbarButton( titleBar, "ib-close", _options.closeTooltipText, function() {
-                hideView( _element_View_FullYear );
-            } );
+            //buildToolbarButton( titleBar, "ib-close", _options.closeTooltipText, function() {
+                //hideView( _element_View_FullYear );
+           // } );
     
-            titleBar.appendChild( createElement( "div", "right-divider-line" ) );
+            //titleBar.appendChild( createElement( "div", "right-divider-line" ) );
 
             if ( _options.views.fullYear.showExtraTitleBarButtons && _options.fullScreenModeEnabled ) {
                 _element_View_FullYear_FullScreenButton = buildToolbarButton( titleBar, "ib-arrow-expand-left-right", _options.enableFullScreenTooltipText, fullScreenModeHeaderDoubleClick );
 
-                titleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
+//                titleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
             }
 
-            buildToolbarButton( titleBar, "ib-arrow-right-full", _options.nextYearTooltipText, onNextFullYear );
+            //buildToolbarButton( titleBar, "ib-arrow-right-full", _options.nextYearTooltipText, onNextFullYear );
                 
 //            if ( _options.views.fullYear.showExtraTitleBarButtons && _options.manualEditingEnabled ) {
 //                buildToolbarButton( titleBar, "ib-plus", _options.addEventTooltipText, function() {
@@ -4554,12 +4554,12 @@ export function calendarJs( elementOrId, options, searchOptions ) {
             } );
     
             if ( _options.views.allEvents.showExtraTitleBarButtons ) {
-                titleBar.appendChild( createElement( "div", "right-divider-line" ) );
+                //titleBar.appendChild( createElement( "div", "right-divider-line" ) );
 
                 if ( _options.fullScreenModeEnabled ) {
                     _element_View_AllEvents_FullScreenButton = buildToolbarButton( titleBar, "ib-arrow-expand-left-right", _options.enableFullScreenTooltipText, fullScreenModeHeaderDoubleClick );
 
-                    titleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
+//                    titleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
                 }
 
 //                if ( _options.manualEditingEnabled ) {
@@ -4574,7 +4574,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
             }
 
             if ( _options.views.allEvents.showExtraTitleBarButtons ) {
-                titleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
+//                titleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
                 
                 buildToolbarButton( titleBar, "ib-refresh", _options.refreshTooltipText, function() {
                     refreshViews( true, true );
@@ -4879,13 +4879,13 @@ export function calendarJs( elementOrId, options, searchOptions ) {
                 hideView( _element_View_Timeline );
             } );
 
-            titleBar.appendChild( createElement( "div", "right-divider-line" ) );
+            //titleBar.appendChild( createElement( "div", "right-divider-line" ) );
     
             if ( _options.views.timeline.showExtraTitleBarButtons ) {
                 if ( _options.fullScreenModeEnabled ) {
                     _element_View_Timeline_FullScreenButton = buildToolbarButton( titleBar, "ib-arrow-expand-left-right", _options.enableFullScreenTooltipText, fullScreenModeHeaderDoubleClick );
 
-                    titleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
+//                    titleBar.appendChild( createElement( "div", "right-divider-line-full-screen-mode" ) );
                 }
             }
 
@@ -4898,7 +4898,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
 //            }
 
             if ( _options.views.fullDay.enabled ) {
-                titleBar.appendChild( createElement( "div", "right-divider-line-views" ) );
+//                titleBar.appendChild( createElement( "div", "right-divider-line-views" ) );
 
                 buildToolbarButton( titleBar, "ib-hourglass", _options.viewFullDayTooltipText, function() {
                     showFullDayView( _element_View_Timeline_DateSelected, true );
@@ -4908,7 +4908,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
             if ( !_element_Mode_DatePicker_Enabled && isSideMenuAvailable() ) {
                 buildToolbarButton( titleBar, "ib-hamburger", _options.showMenuTooltipText, showSideMenu );
 
-                titleBar.appendChild( createElement( "div", "left-divider-line" ) );
+//                titleBar.appendChild( createElement( "div", "left-divider-line" ) );
             }
     
             buildToolbarButton( titleBar, "ib-arrow-left-full", _options.previousYearTooltipText, onPreviousTimelineDay );
@@ -4922,7 +4922,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
                     } );
                 }
 
-                titleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
+//                titleBar.appendChild( createElement( "div", "left-divider-line-events" ) );
 
                 buildToolbarButton( titleBar, "ib-refresh", _options.refreshTooltipText, function() {
                     refreshViews( true, true );
@@ -10587,11 +10587,11 @@ export function calendarJs( elementOrId, options, searchOptions ) {
 
     function buildToolbarButton( container, cssClass, tooltipText, onClickEvent, overrideShow ) {
         var button = createElement( "div", cssClass );
-        button.ondblclick = cancelBubble;
-        button.onclick = onClickEvent;
-        container.appendChild( button );
+        //button.ondblclick = cancelBubble;
+        //button.onclick = onClickEvent;
+        //container.appendChild( button );
 
-        addToolTip( button, tooltipText, overrideShow );
+        //addToolTip( button, tooltipText, overrideShow );
 
         return button;
     }
@@ -12177,25 +12177,74 @@ export function calendarJs( elementOrId, options, searchOptions ) {
      * ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
      */
 
-     _that.jumpToSelectedDate = function(selectedDate) {
-         var viewOpen = getActiveView()
-         if ( viewOpen === null ) {
-            build( selectedDate );
-            buildFullMonthViewPinUpImage();
-         }
-         else {
-            if ( viewOpen === _element_View_FullDay ) {
+//     _that.jumpToSelectedDate = function(selectedDate) {
+//         var viewOpen = getActiveView()
+//         if ( viewOpen === null ) {
+//            build( selectedDate );
+//            buildFullMonthViewPinUpImage();
+//         }
+//         else {
+//            if ( viewOpen === _element_View_FullDay ) {
+//                showFullDayView( selectedDate );
+//            } else if ( viewOpen === _element_View_FullWeek ) {
+//                console.log("full week")
+//                showFullWeekView( selectedDate );
+//            } else if ( viewOpen === _element_View_FullYear ) {
+//                showFullYearView( selectedDate.getFullYear() );
+//            } else if ( viewOpen === _element_View_Timeline ) {
+//                showTimelineView( selectedDate );
+//            }
+//         }
+//
+//     };
+     _that.jumpToSelectedDate = function(selectedDate,targetView) {
+        let viewOpen = getActiveView();
+        console.log(viewOpen);
+        switch(targetView){
+            case "DAY":
+                if(viewOpen!==_element_View_FullMonth) hideView(viewOpen);
+                viewOpen=_element_View_FullDay;
+                if(viewOpen===null) buildFullDayView(selectedDate);
+            break;
+            case "WEEK":
+                if(viewOpen!==_element_View_FullMonth) hideView(viewOpen);
+                viewOpen=_element_View_FullWeek;
+                if(viewOpen===null) buildFullWeekView(selectedDate);
+            break;
+            case "MONTH":
+                if(viewOpen!==_element_View_FullMonth) hideView(viewOpen);
+                viewOpen=_element_View_FullMonth;
+                if(viewOpen===null) buildFullMonthView(selectedDate);
+            break;
+            case "YEAR":
+                if(viewOpen!==_element_View_FullMonth) hideView(viewOpen);
+                viewOpen=_element_View_FullYear;
+                if(viewOpen===null) buildFullYearView();
+            break;
+        }
+        switch(viewOpen) {
+            case null:
+                build( selectedDate );
+                buildFullMonthViewPinUpImage();
+            break;
+            case _element_View_FullDay:
                 showFullDayView( selectedDate );
-            } else if ( viewOpen === _element_View_FullWeek ) {
-                console.log("full week")
+            break;
+            case _element_View_FullWeek:
                 showFullWeekView( selectedDate );
-            } else if ( viewOpen === _element_View_FullYear ) {
+            break;
+            case _element_View_FullYear:
                 showFullYearView( selectedDate.getFullYear() );
-            } else if ( viewOpen === _element_View_Timeline ) {
+            break;
+            case _element_View_Timeline:
+                showFullYearView( selectedDate.getFullYear() );
+            break;
+            case _element_View_FullWeek:
                 showTimelineView( selectedDate );
-            }
-         }
-
+            break;
+            default:
+            // code block
+        }
      };
 
     /**
