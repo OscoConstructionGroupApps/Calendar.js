@@ -12246,6 +12246,53 @@ export function calendarJs( elementOrId, options, searchOptions ) {
             // code block
         }
      };
+     /**
+        * moveToNextFullDay().
+        *
+        * Moves to the next day.
+        *
+        * @public
+        * @fires       onNextFullDay
+        *
+        * @returns     {Object}                                                The Calendar.js class instance.
+        */
+       _that.moveToNextFullDay = function() {
+           onNextFullDay();
+
+           return _that;
+       };
+
+       /**
+        * moveToPreviousFullWeek().
+        *
+        * Moves to the previous week.
+        *
+        * @public
+        * @fires       onPreviousFullWeek
+        *
+        * @returns     {Object}                                                The Calendar.js class instance.
+        */
+       _that.moveToPreviousFullWeek = function() {
+           onPreviousFullWeek();
+
+           return _that;
+       };
+
+       /**
+        * moveToNextFullWeek().
+        *
+        * Moves to the next week.
+        *
+        * @public
+        * @fires       onNextFullWeek
+        *
+        * @returns     {Object}                                                The Calendar.js class instance.
+        */
+       _that.moveToNextFullWeek = function() {
+           onNextFullWeek();
+
+           return _that;
+       };
 
     /**
      * moveToPreviousMonth().
@@ -12275,7 +12322,6 @@ export function calendarJs( elementOrId, options, searchOptions ) {
      */
     _that.moveToNextMonth = function() {
         onNextMonth();
-
         return _that;
     };
 
@@ -12291,7 +12337,6 @@ export function calendarJs( elementOrId, options, searchOptions ) {
      */
     _that.moveToPreviousYear = function() {
         moveBackYear();
-
         return _that;
     };
 
