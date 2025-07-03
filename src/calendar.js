@@ -4003,7 +4003,7 @@ export function calendarJs( elementOrId, options, searchOptions ) {
 
                         if ( !_options.views.fullMonth.useOnlyDotEvents ) {
                             if ( !fireCustomTrigger( _options.events.onFullMonthEventRender, event, eventDetails ) ) {
-                                var eventTitle = eventDetails.title,
+                                var eventTitle = eventDetails.id,
                                     repeatEvery = getNumber( eventDetails.repeatEvery );
             
                                 if ( _options.views.fullMonth.showTimesInEvents && !eventDetails.isAllDay && eventDetails.from.getDate() === eventDetails.to.getDate() ) {
@@ -12033,14 +12033,14 @@ export function calendarJs( elementOrId, options, searchOptions ) {
                     showEventEditingDialog( eventDetails );
                 }
             };
-        } else {
+        }
 
             if ( isDefinedFunction( _options.events.onEventDoubleClick ) ) {
                 event.ondblclick = function() {
                     fireCustomTrigger( _options.events.onEventDoubleClick, eventDetails );
                 };
             }
-        }
+
     }
 
 
@@ -12199,7 +12199,6 @@ export function calendarJs( elementOrId, options, searchOptions ) {
 //     };
      _that.jumpToSelectedDate = function(selectedDate,targetView) {
         let viewOpen = getActiveView();
-        console.log(viewOpen);
         switch(targetView){
             case "DAY":
                 if(viewOpen!==_element_View_FullMonth) hideView(viewOpen);
